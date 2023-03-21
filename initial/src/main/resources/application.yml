@@ -6,6 +6,9 @@ spring:
 
 server:
   ssl:
+    enabled: true
+    protocol: TLS
+    enabled-protocols: TLSv1.2
     key-store: classpath:router_server.p12
     key-store-password: password
     key-store-type: pkcs12
